@@ -5,5 +5,3 @@
 ### Links
 
 [GithubPages Link]()
-
-[Vercel Link]()
