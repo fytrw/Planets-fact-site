@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Nav from './components/Nav';
+import Planets from './components/Planets';
+import data from './data.json';
 
 function App() {
+  const [activePlanet, setActivePlanet] = useState('Earth');
+  const [info, setInfo] = useState('overview');
+  const [activeHamburger, setActiveHamburger] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav active={activePlanet} setActive={setActivePlanet} data={data} setInfo={setInfo} activeHamburger={activeHamburger} setActiveHamburger={setActiveHamburger}/>
+      <Planets active={activePlanet} data={data} info={info} setInfo={setInfo} activeHamburger={activeHamburger}/>
     </div>
-  );
+  )
 }
 
 export default App;
