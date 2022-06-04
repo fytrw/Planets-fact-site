@@ -2,7 +2,7 @@ img.disabled {
     display: none;
 }
 
-section {
+main {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -181,7 +181,7 @@ button.neptune.active, button.neptune.active::after {
 }
 
 @media (max-width: 1024px) {
-    section {
+    main {
         padding-top: 0px;
         width: 90%;
     }
@@ -271,12 +271,12 @@ button.neptune.active, button.neptune.active::after {
     }
 }
 @media (max-width: 680px){
-    section.activeHamburger {
+    main.activeHamburger {
         position: absolute;
         top: 100vh;
     }
 
-    section {
+    main {
         width: 100%;
     }
     .photos {

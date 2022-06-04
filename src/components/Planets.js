@@ -34,7 +34,7 @@ function Planets({active, data, info, setInfo, activeHamburger}) {
   }
 
   return (
-    <section className={`${activeHamburger ? 'activeHamburger':''}`}>
+    <main className={`${activeHamburger ? 'activeHamburger':''}`}>
       <div className="photos"> 
         <img src={`..${activeData[0].images.planet.substring(1)}`} alt={activeData[0].name}/>
         {switchImg(info)}
@@ -55,7 +55,7 @@ function Planets({active, data, info, setInfo, activeHamburger}) {
         <div><p>Radius</p>{activeData[0].radius}</div>
         <div><p>Average temp.</p>{activeData[0].temperature}</div>
       </div>
-    </section>
+    </main>
   )
 }
 

@@ -9,7 +9,6 @@ function Nav({active, setActive, data, setInfo, activeHamburger, setActiveHambur
     }
     return false
   });
-  console.log(activeData);
   return (
     <div className="nav">
       <div className="logo">The planets</div>
