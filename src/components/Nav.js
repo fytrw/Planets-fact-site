@@ -7,7 +7,9 @@ function Nav({active, setActive, data, setInfo, activeHamburger, setActiveHambur
     if(planet.name === active){
       return planet
     }
-  })
+    return false
+  });
+  console.log(activeData);
   return (
     <div className="nav">
       <div className="logo">The planets</div>
