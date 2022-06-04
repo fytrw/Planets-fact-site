@@ -4,4 +4,4 @@
 ---
 ### Links
 
-[GithubPages Link]()
+[Vercel Link](https://planets-fact-site-eta.vercel.app/)
